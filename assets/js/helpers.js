@@ -106,42 +106,27 @@ export default {
         }
     },
 
+    
 
-    // getIceServer() {
-    //     return {
-    //         iceServers: [
-    //             {
-    //                 urls: ["stun:eu-turn4.xirsys.com"]
-    //             },
-    //             {
-    //                 username: "ml0jh0qMKZKd9P_9C0UIBY2G0nSQMCFBUXGlk6IXDJf8G2uiCymg9WwbEJTMwVeiAAAAAF2__hNSaW5vbGVl",
-    //                 credential: "4dd454a6-feee-11e9-b185-6adcafebbb45",
-    //                 urls: [
-    //                     "turn:eu-turn4.xirsys.com:80?transport=udp",
-    //                     "turn:eu-turn4.xirsys.com:3478?transport=tcp"
-    //                 ]
-    //             }
-    //         ]
-    //     };
-    // },
-
+    
+    // TURN đóng vai trò quan trọng trong việc kết nối và duy trì người dùng WebRTC của bạn trong kết nối ngang hàng trực tiếp hoặc thông qua kết nối chuyển tiếp trong đó dữ liệu được truyền qua máy chủ TURN
     getIceServer() {
         return {
             iceServers: [
                 {
-                    urls: [ "stun:ss-turn2.xirsys.com" ]
+                    urls: [ "stun:hk-turn1.xirsys.com" ]
                 },
                 
                 {
-                    username: "7qwCB7NlAprUl-v2N0W9DniMXHtidu1fWrr3ANGWmYIR_AXrJ73mteKVVySrGrlZAAAAAGF_oQhtaW5oaHV5MTAxMTAw",
-                    credential: "38706b3c-3aeb-11ec-8d93-0242ac140004",
+                    username: "m3NuHHa2m38ELMFRiNPS9NE5uBfe_QUJs5NiUEC9DVHbfPtNWrFpY3D3TlDfiRxHAAAAAGF_7LRobnZ1b25ndHU=",
+                    credential: "53836a46-3b18-11ec-ab22-0242ac120004",
                     urls: [
-                        "turn:ss-turn2.xirsys.com:80?transport=udp",
-                        "turn:ss-turn2.xirsys.com:3478?transport=udp",
-                        "turn:ss-turn2.xirsys.com:80?transport=tcp",
-                        "turn:ss-turn2.xirsys.com:3478?transport=tcp",
-                        "turns:ss-turn2.xirsys.com:443?transport=tcp",
-                        "turns:ss-turn2.xirsys.com:5349?transport=tcp"
+                        "turn:hk-turn1.xirsys.com:80?transport=udp",
+                        "turn:hk-turn1.xirsys.com:3478?transport=udp",
+                        "turn:hk-turn1.xirsys.com:80?transport=tcp",
+                        "turn:hk-turn1.xirsys.com:3478?transport=tcp",
+                        "turns:hk-turn1.xirsys.com:443?transport=tcp",
+                        "turns:hk-turn1.xirsys.com:5349?transport=tcp"
                     ]
                  }
             ]
@@ -165,6 +150,7 @@ export default {
 
         let infoDiv = document.createElement( 'div' );
         infoDiv.className = 'sender-info';
+        // infoDiv.innerText = `${ senderName } - ${ moment().format( 'Do MMMM, YYYY h:mm a' ) }`;
         infoDiv.innerText = `${ senderName } - ${ moment().format( 'Do MMMM, YYYY h:mm a' ) }`;
 
         let colDiv = document.createElement( 'div' );
