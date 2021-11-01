@@ -107,20 +107,43 @@ export default {
     },
 
 
+    // getIceServer() {
+    //     return {
+    //         iceServers: [
+    //             {
+    //                 urls: ["stun:eu-turn4.xirsys.com"]
+    //             },
+    //             {
+    //                 username: "ml0jh0qMKZKd9P_9C0UIBY2G0nSQMCFBUXGlk6IXDJf8G2uiCymg9WwbEJTMwVeiAAAAAF2__hNSaW5vbGVl",
+    //                 credential: "4dd454a6-feee-11e9-b185-6adcafebbb45",
+    //                 urls: [
+    //                     "turn:eu-turn4.xirsys.com:80?transport=udp",
+    //                     "turn:eu-turn4.xirsys.com:3478?transport=tcp"
+    //                 ]
+    //             }
+    //         ]
+    //     };
+    // },
+
     getIceServer() {
         return {
             iceServers: [
                 {
-                    urls: ["stun:eu-turn4.xirsys.com"]
+                    urls: [ "stun:ss-turn2.xirsys.com" ]
                 },
+                
                 {
-                    username: "ml0jh0qMKZKd9P_9C0UIBY2G0nSQMCFBUXGlk6IXDJf8G2uiCymg9WwbEJTMwVeiAAAAAF2__hNSaW5vbGVl",
-                    credential: "4dd454a6-feee-11e9-b185-6adcafebbb45",
+                    username: "7qwCB7NlAprUl-v2N0W9DniMXHtidu1fWrr3ANGWmYIR_AXrJ73mteKVVySrGrlZAAAAAGF_oQhtaW5oaHV5MTAxMTAw",
+                    credential: "38706b3c-3aeb-11ec-8d93-0242ac140004",
                     urls: [
-                        "turn:eu-turn4.xirsys.com:80?transport=udp",
-                        "turn:eu-turn4.xirsys.com:3478?transport=tcp"
+                        "turn:ss-turn2.xirsys.com:80?transport=udp",
+                        "turn:ss-turn2.xirsys.com:3478?transport=udp",
+                        "turn:ss-turn2.xirsys.com:80?transport=tcp",
+                        "turn:ss-turn2.xirsys.com:3478?transport=tcp",
+                        "turns:ss-turn2.xirsys.com:443?transport=tcp",
+                        "turns:ss-turn2.xirsys.com:5349?transport=tcp"
                     ]
-                }
+                 }
             ]
         };
     },
