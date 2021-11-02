@@ -108,27 +108,23 @@ export default {
     
 
     
-    // TURN đóng vai trò quan trọng trong việc kết nối và duy trì người dùng WebRTC của bạn trong kết nối ngang hàng trực tiếp hoặc thông qua kết nối chuyển tiếp trong đó dữ liệu được truyền qua máy chủ TURN
+    // vai trò quan trọng trong việc kết nối và duy trì người dùng WebRTC của bạn trong kết nối ngang hàng trực tiếp hoặc thông qua kết nối chuyển tiếp trong đó dữ liệu được truyền qua máy chủ TURN
     getIceServer() {
         return {
-            iceServers: [
-                {
-                    urls: [ "stun:hk-turn1.xirsys.com" ]
-                },
-                
-                {
-                    username: "m3NuHHa2m38ELMFRiNPS9NE5uBfe_QUJs5NiUEC9DVHbfPtNWrFpY3D3TlDfiRxHAAAAAGF_7LRobnZ1b25ndHU=",
-                    credential: "53836a46-3b18-11ec-ab22-0242ac120004",
-                    urls: [
-                        "turn:hk-turn1.xirsys.com:80?transport=udp",
-                        "turn:hk-turn1.xirsys.com:3478?transport=udp",
-                        "turn:hk-turn1.xirsys.com:80?transport=tcp",
-                        "turn:hk-turn1.xirsys.com:3478?transport=tcp",
-                        "turns:hk-turn1.xirsys.com:443?transport=tcp",
-                        "turns:hk-turn1.xirsys.com:5349?transport=tcp"
-                    ]
-                 }
-            ]
+            iceServers: [{
+                urls: [ "stun:hk-turn1.xirsys.com" ]
+             }, {
+                username: "fcM8fvFDczyQkZVDOfvEj_essppW9KMl7-zie3JHXJ-gTdUgDoOv50-i8Dko1RybAAAAAGGAkDZibG9vZDExMDI=",
+                credential: "c8ae21c4-3b79-11ec-83d3-0242ac120004",
+                urls: [
+                    "turn:hk-turn1.xirsys.com:80?transport=udp",
+                    "turn:hk-turn1.xirsys.com:3478?transport=udp",
+                    "turn:hk-turn1.xirsys.com:80?transport=tcp",
+                    "turn:hk-turn1.xirsys.com:3478?transport=tcp",
+                    "turns:hk-turn1.xirsys.com:443?transport=tcp",
+                    "turns:hk-turn1.xirsys.com:5349?transport=tcp"
+                ]
+             }]
         };
     },
 
