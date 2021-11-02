@@ -14,7 +14,6 @@ export default {
         }
     },
 
-
     pageHasFocus() {
         return !( document.hidden || document.onfocusout || window.onpagehide || window.onblur );
     },
