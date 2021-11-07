@@ -5,6 +5,7 @@ let io = require( 'socket.io' )( server );
 let stream = require( './ws/stream' );
 let path = require( 'path' );
 let favicon = require( 'serve-favicon' );
+let Swal = require('sweetalert2');
 require('dotenv').config()
 
 app.use( favicon( path.join( __dirname, 'favicon.ico' ) ) );
