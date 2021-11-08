@@ -439,18 +439,6 @@ window.addEventListener('load', () => {
             }
         });
 
-
-        //When user choose to record own video
-        document.getElementById('record-video').addEventListener('click', () => {
-            h.toggleModal('recording-options-modal', false);
-
-            if (myStream && myStream.getTracks().length) {
-                startRecording(myStream);
-            } else {
-                h.getUserFullMedia().then((videoStream) => {
-                    startRecording(videoStream);
-                }).catch(() => {});
-            }
-        });
+       
     }
 });

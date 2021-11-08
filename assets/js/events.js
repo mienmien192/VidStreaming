@@ -67,12 +67,7 @@ window.addEventListener('load', () => {
             //     Share the room link with your partners.`;
 
             //empty the values
-            sweetAlert(
-                "Enter the link to Join the Meeting",
-                roomLink,
-                "success"
-
-            );
+            sessionStorage.setItem('a',roomLink);
             document.querySelector('#room-name').value = '';
 
         } else {

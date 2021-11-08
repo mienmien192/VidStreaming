@@ -210,9 +210,9 @@ export default {
         elem.requestFullscreen() || elem.mozRequestFullScreen() || elem.webkitRequestFullscreen() || elem.msRequestFullscreen();
     },
 
-
+    // appear/disappear micro 
     singleStreamToggleMute(e) {
-        if (e.target.classList.contains('fa-microphone')) {
+        if (e.target.classList.contains('fa-microphone', )) {
             e.target.parentElement.previousElementSibling.muted = true;
             e.target.classList.add('fa-microphone-slash');
             e.target.classList.remove('fa-microphone');
