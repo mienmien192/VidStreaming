@@ -225,6 +225,7 @@
     .local-video {
         width: 40vw;
     }
+    
 }
 
 @media (min-width:768px) {
@@ -232,4 +233,17 @@
         width: 50%;
         z-index: 1000;
     }
+    
+}
+.left{
+    min-width: 80%;
+    position: absolute;
+    top: -30%;
+    left: 20%;
+}
+.right{
+    
+    position: absolute;
+    top: 50%;
+    left: 30%;
 }
